@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mortezaahmadiaf/mortezaahmadi.af.github.io.git"
+    "url": "git+https://mortezaahmadiaf.github.io/mortezaahmadi/.git"
   },
   "keywords": [
     "react",
@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/mortezaahmadiaf/react-app/issues"
   },
-  "homepage": "https://github.com/mortezaahmadiaf/mortezaahmadi.af.github.io",
+  "homepage": "https://mortezaahmadiaf.github.io/mortezaahmadi/",
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-flow": "^7.18.6",
