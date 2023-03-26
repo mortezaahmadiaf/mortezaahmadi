@@ -7,7 +7,7 @@
     "start": "npm run start-dev",
     "start-dev": "webpack serve --config=config/webpack/dev.js",
     "build": "npm run clean-dist && webpack --config=config/webpack/prod.js",
-    "clean-dist": "rimraf dist/*",
+    "clean-dist": "rimraf build/*",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
