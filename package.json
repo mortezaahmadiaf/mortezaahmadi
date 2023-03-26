@@ -8,12 +8,12 @@
     "start-dev": "webpack serve --config=config/webpack/dev.js",
     "clean-dist": "rimraf build/*",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b master",
+    "deploy": "gh-pages -d build",
     "build": "npm run clean-dist && webpack --config=config/webpack/prod.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://mortezaahmadiaf.github.io/mortezaahmadi/.git"
+    "url": "git+https://mortezaahmadiaf.github.io/mortezaahmadi.git"
   },
   "keywords": [
     "react",
@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/mortezaahmadiaf/mortezaahmadi/issues"
   },
-  "homepage": "https://mortezaahmadiaf.github.io/mortezaahmadi/build",
+  "homepage": "https://mortezaahmadiaf.github.io/mortezaahmadi/",
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-flow": "^7.18.6",

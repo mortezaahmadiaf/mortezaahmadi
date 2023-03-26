@@ -35,7 +35,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "../../public", "index.html"),
-      base: ".",
+      base: "/",
       inject: "head",
       chunksSortMode: "auto",
       clean: true,
