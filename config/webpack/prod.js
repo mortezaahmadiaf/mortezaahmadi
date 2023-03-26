@@ -11,7 +11,7 @@ module.exports = merge(commonConfig, {
   output: {
     filename: "js/bundle.js",
     path: resolve(__dirname, "../../build"),
-    publicPath: "/build",
+    publicPath: "./",
   },
   module: {
     rules: [
