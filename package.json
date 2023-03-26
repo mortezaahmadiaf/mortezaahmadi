@@ -6,10 +6,10 @@
   "scripts": {
     "start": "npm run start-dev",
     "start-dev": "webpack serve --config=config/webpack/dev.js",
+    "build": "npm run clean-dist && webpack --config=config/webpack/prod.js",
     "clean-dist": "rimraf build/*",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "npm run clean-dist && webpack --config=config/webpack/prod.js"
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
