@@ -10,7 +10,7 @@ module.exports = merge(commonConfig, {
   mode: "production",
   output: {
     filename: "js/bundle.js",
-    path: resolve(__dirname, "../../"),
+    path: resolve(__dirname, "../../build"),
     publicPath: "./",
   },
   module: {
@@ -26,7 +26,7 @@ module.exports = merge(commonConfig, {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: resolve(__dirname, "/css"),
+              publicPath: resolve(__dirname, "build/css"),
             },
           },
           "css-loader",
