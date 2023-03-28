@@ -7,6 +7,6 @@ const Spinner = () => {
 };
 
 export const App = () => {
-  return <div>COMING SOON ...</div>;
-  // <RouterProvider router={router} fallbackElement={<Spinner />} />;
+  // return <div>COMING SOON ...</div>;
+  return <RouterProvider router={router} fallbackElement={<Spinner />} />;
 };
