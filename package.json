@@ -8,6 +8,7 @@
     "start-dev": "webpack serve --config=config/webpack/dev.js",
     "build": "npm run clean-dist && webpack --config=config/webpack/prod.js",
     "clean-dist": "rimraf build/*",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "repository": {
@@ -23,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/mortezaahmadiaf/mortezaahmadi/issues"
   },
-  "homepage": "https://mortezaahmadiaf.github.io/mortezaahmadi",
+  "homepage": "https://mortezaahmadiaf.github.io/mortezaahmadi/",
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-flow": "^7.18.6",
