@@ -14,7 +14,7 @@ module.exports = {
       app: path.resolve(__dirname, "../../src/"),
     },
   },
- 
+
   module: {
     rules: [
       {
@@ -22,27 +22,26 @@ module.exports = {
         use: ["babel-loader"],
         exclude: /node_modules/,
       },
-      { 
-        test: /\.(ts|tsx)$/, 
-        loader: "ts-loader" 
-      }
+      {
+        test: /\.(ts|tsx)$/,
+        loader: "ts-loader",
+      },
       // {
       //   test: /\.(jpe?g|png|gif|svg|otf)$/i,
       //   type: "asset/resource",
       // },
-     
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname,"../../public", "index.html"),
-      // base: ".",
+      template: path.join(__dirname, "../../public", "index.html"),
+      base: "/",
       inject: "head",
       chunksSortMode: "auto",
       clean: true,
       attributes: {
-        crossorigin: 'anonymous'
-    }
+        crossorigin: "anonymous",
+      },
     }),
   ],
 };
