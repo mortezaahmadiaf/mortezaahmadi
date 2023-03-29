@@ -38,7 +38,7 @@ module.exports = merge(commonConfig, {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg|otf)$/i,
+        test: /\.jpe?g|png$/,
         exclude: /node_modules/,
         use: ["url-loader", "file-loader"],
       },

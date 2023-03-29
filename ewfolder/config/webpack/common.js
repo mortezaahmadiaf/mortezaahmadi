@@ -26,23 +26,17 @@ module.exports = {
         test: /\.(ts|tsx)$/,
         loader: "ts-loader",
       },
-      // {
-      //   test: /\.(jpe?g|png|gif|svg|otf)$/i,
-      //   type: "asset/resource",
-      // },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: "Morteza Ahmadi",
       template: path.join(__dirname, "../../public", "index.html"),
-      // base: "./",
-      // inject: "head",
-      // chunksSortMode: "auto",
-      // clean: true,
-      // minify: true,
+      base: "./",
+      inject: "head",
+      chunksSortMode: "auto",
       attributes: {
-        // crossorigin: "anonymous",
+        crossorigin: "anonymous",
       },
     }),
   ],
