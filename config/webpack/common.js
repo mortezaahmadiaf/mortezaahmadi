@@ -26,10 +26,6 @@ module.exports = {
         test: /\.(ts|tsx)$/,
         loader: "ts-loader",
       },
-      // {
-      //   test: /\.(jpe?g|png|gif|svg|otf)$/i,
-      //   type: "asset/resource",
-      // },
     ],
   },
   plugins: [
@@ -39,8 +35,6 @@ module.exports = {
       base: "./",
       inject: "head",
       chunksSortMode: "auto",
-      // clean: true,
-      // minify: true,
       attributes: {
         crossorigin: "anonymous",
       },
