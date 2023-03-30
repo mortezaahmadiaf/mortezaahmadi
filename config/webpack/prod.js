@@ -5,6 +5,7 @@ const commonConfig = require("./common");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const sass = require("sass");
 const CopyPlugin = require("copy-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = merge(commonConfig, {
   mode: "production",
@@ -37,17 +38,48 @@ module.exports = merge(commonConfig, {
           },
         ],
       },
-      {
-        test: /\.(jpe?g|png|gif|svg|otf)$/i,
-        exclude: /node_modules/,
-        use: ["url-loader", "file-loader"],
-      },
+      // {
+      //   test: /\.(jpe?g|png|gif|svg|otf)$/i,
+      //   exclude: /node_modules/,
+      //   use: ["url-loader", "file-loader"],
+      // },
     ],
   },
   devtool: "source-map",
   externals: {
     // react: "React",
     // "react-dom": "ReactDOM",
+  },
+  optimization: {
+    runtimeChunk: false,
+    minimizer: [
+      new TerserPlugin({
+        parallel: true,
+        // sourceMap: true, // Enable source maps. Please note that this will slow down the build
+        terserOptions: {
+          ecma: 6,
+          toplevel: true,
+          module: true,
+          compress: {
+            warnings: false,
+            ecma: 6,
+            module: true,
+            toplevel: true,
+          },
+          output: {
+            comments: false,
+            beautify: false,
+            indent_level: 2,
+            ecma: 6,
+          },
+          mangle: {
+            keep_fnames: true,
+            module: true,
+            toplevel: true,
+          },
+        },
+      }),
+    ],
   },
   plugins: [
     new MiniCssExtractPlugin({

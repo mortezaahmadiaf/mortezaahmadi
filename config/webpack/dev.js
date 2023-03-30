@@ -21,10 +21,10 @@ module.exports = merge(commonConfig, {
         test: /\.(scss|sass)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
-      {
-        test: /\.(jpe?g|png|gif|svg|otf)$/i,
-        type: "asset/resource",
-      },
+      // {
+      //   test: /\.(jpe?g|png|gif|svg|otf)$/i,
+      //   type: "asset/resource",
+      // },
     ],
   },
   devtool: "cheap-module-source-map",

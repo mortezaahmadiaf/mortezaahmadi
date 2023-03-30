@@ -2,20 +2,20 @@ import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
 export interface ILanguageState {
-  lang: "en" | "fa";
-  font: "vazir";
+  name: "en" | "fa";
+  font: "vazir-regular-font" | "gotham-Light-font";
   direction: "ltr" | "rtl";
 }
 
 const initialState: ILanguageState = {
   direction: "ltr",
-  font: "vazir",
-  lang: "en",
+  font: "gotham-Light-font",
+  name: "en",
 };
 
 const languages = {
-  en: { direction: "ltr", font: "vazir", lang: "en" },
-  fa: { direction: "rtl", font: "vazir", lang: "fa" },
+  en: { direction: "ltr", font: "gotham-Light-font", name: "en" },
+  fa: { direction: "rtl", font: "vazir-regular-font", name: "fa" },
 };
 
 export const languageSlice = createSlice({

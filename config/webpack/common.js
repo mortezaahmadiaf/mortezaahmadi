@@ -26,9 +26,17 @@ module.exports = {
         test: /\.(ts|tsx)$/,
         loader: "ts-loader",
       },
+      {
+        test: /\.(jpe?g|png|gif|svg|woff|woff2|eot|ttf)$/i,
+        type: "asset/resource",
+      },
       // {
-      //   test: /\.(jpe?g|png|gif|svg|otf)$/i,
-      //   type: "asset/resource",
+      //   test: /\.(woff|woff2|eot|ttf|otf)$/i,
+      //   type: "asset/inline",
+      // },
+      // {
+      //   test: /\.()$/,
+      //   loader: "url-loader",
       // },
     ],
   },

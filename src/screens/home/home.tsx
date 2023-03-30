@@ -30,7 +30,7 @@ const Home = () => {
         go to about us
       </Link>
       {t("test")}
-      <img src="assets/images/morteza.jpg" alt="" />
+      <img src={require("assets/images/morteza.jpg")} alt="" />
     </div>
   );
 };
