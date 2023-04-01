@@ -3,5 +3,4 @@ export const urls = {
   about_us: "about-us",
 };
 
-export const basename =
-  process.env.NODE_ENV === "development" ? "/" : `/${"mortezaahmadi"}/`;
+export const basename = `/${"mortezaahmadi"}/`;
