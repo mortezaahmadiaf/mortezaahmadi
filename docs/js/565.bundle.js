@@ -1,2 +1,0 @@
-(self.webpackChunk=self.webpackChunk||[]).push([[565],{565:(e,s,t)=>{t.r(s),t.d(s,{default:()=>c});const a=JSON.parse('{"test":"test localization"}'),c=Object.assign({},a)}}]);
-//# sourceMappingURL=565.bundle.js.map
