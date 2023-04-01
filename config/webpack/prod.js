@@ -44,7 +44,7 @@ module.exports = merge(commonConfig, {
         type: "asset/resource",
         generator: {
           filename: "assets/images/[name]-[hash][ext]",
-          publicPath: `/${hosting.outDir}/`,
+          publicPath: `/${hosting.name}/`,
         },
       },
       {
