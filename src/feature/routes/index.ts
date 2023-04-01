@@ -4,4 +4,4 @@ export const urls = {
 };
 
 export const basename =
-  process.env.NODE_ENV === "development" ? "/" : `/${process.env.HOST}/`;
+  process.env.NODE_ENV === "development" ? "/" : `/${"mortezaahmadi"}/`;
