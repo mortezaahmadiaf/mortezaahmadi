@@ -1,11 +1,11 @@
 // shared config (dev and prod)
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { resolve } = require("path");
 
 module.exports = {
+  context: resolve(__dirname, "../../src"),
   entry: "./index.tsx",
-  context: path.resolve(__dirname, "../../src"),
-
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
     alias: {
@@ -36,7 +36,7 @@ module.exports = {
       inject: "head",
       chunksSortMode: "auto",
       attributes: {
-        crossorigin: "anonymous",
+        // crossorigin: "anonymous",
       },
     }),
   ],
