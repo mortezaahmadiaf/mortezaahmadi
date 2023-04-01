@@ -2,6 +2,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { resolve } = require("path");
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   context: resolve(__dirname, "../../src"),
@@ -9,8 +10,7 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
     alias: {
-      component: path.resolve(__dirname, "../../src/components/"),
-      assets: path.resolve(__dirname, "../../src/assets/"),
+      config: path.resolve(__dirname, "../../config"),
       app: path.resolve(__dirname, "../../src/"),
     },
   },
@@ -32,12 +32,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Morteza Ahmadi",
       template: path.join(__dirname, "../../public", "index.html"),
-      base: "./",
+      base: ".",
       inject: "head",
       chunksSortMode: "auto",
       attributes: {
         // crossorigin: "anonymous",
       },
     }),
+    new Dotenv(),
   ],
 };

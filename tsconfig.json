@@ -18,8 +18,7 @@
     "baseUrl": "./",
     "paths": {
       "app/*": ["./src/*"],
-      "assets/*": ["./src/assets/*"],
-      "components/*": ["./src/components/*"]
+      "config/*": ["./config/*"]
     },
     "importHelpers": true,
     "esModuleInterop": true,

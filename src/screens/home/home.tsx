@@ -31,7 +31,7 @@ const Home = () => {
       </Link>
       {translate("test")}
       <Translate id="test" />
-      <img src={require("assets/images/morteza.jpg")} alt="" />
+      <img src={require("app/assets/images/morteza.jpg")} alt="" />
     </div>
   );
 };
