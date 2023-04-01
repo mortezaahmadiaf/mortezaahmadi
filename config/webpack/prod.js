@@ -12,7 +12,7 @@ module.exports = merge(commonConfig, {
 
   output: {
     filename: "js/bundle.js",
-    path: resolve(__dirname, `../../${hosting.name}`),
+    path: resolve(__dirname, `../../${hosting.outDir}`),
     // publicPath: "/mortezaahmadi/",
   },
   module: {
@@ -28,7 +28,7 @@ module.exports = merge(commonConfig, {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: resolve(__dirname, `${hosting.name}/css`),
+              publicPath: resolve(__dirname, `${hosting.outDir}/css`),
             },
           },
           "css-loader",
@@ -44,7 +44,7 @@ module.exports = merge(commonConfig, {
         type: "asset/resource",
         generator: {
           filename: "assets/images/[name]-[hash][ext]",
-          publicPath: `/${hosting.name}/`,
+          publicPath: `/${hosting.outDir}/`,
         },
       },
       {
