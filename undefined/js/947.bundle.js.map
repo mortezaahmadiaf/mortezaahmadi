@@ -1,1 +1,0 @@
-{"version":3,"file":"js/947.bundle.js","mappings":"yGACA,EAAe,iB","sources":["webpack:///./feature/i18n/fa/index.ts"],"sourcesContent":["import test from './test.json'\r\nexport default {\r\n    ...test\r\n}"],"names":[],"sourceRoot":""}
