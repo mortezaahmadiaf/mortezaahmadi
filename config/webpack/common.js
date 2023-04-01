@@ -2,7 +2,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { resolve } = require("path");
-const Dotenv = require("dotenv-webpack");
+// const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   context: resolve(__dirname, "../../src"),
@@ -39,6 +39,6 @@ module.exports = {
         // crossorigin: "anonymous",
       },
     }),
-    new Dotenv(),
+    // new Dotenv(),
   ],
 };
