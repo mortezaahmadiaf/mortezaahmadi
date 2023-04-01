@@ -3,4 +3,4 @@ export const urls = {
   about_us: "about-us",
 };
 
-export const basename = `/${"mortezaahmadi"}/`;
+export const basename = "/mortezaahmadi/";

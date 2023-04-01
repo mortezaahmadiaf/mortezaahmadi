@@ -4,15 +4,16 @@ const { resolve } = require("path");
 const commonConfig = require("./common");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const sass = require("sass");
+const CopyPlugin = require("copy-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-const HOST = "mortezaahmadi";
+
 module.exports = merge(commonConfig, {
   mode: "production",
 
   output: {
     filename: "js/bundle.js",
-    path: resolve(__dirname, `../../${HOST}`),
-    // publicPath: "/docs/",
+    path: resolve(__dirname, "../../mortezaahmadi"),
+    // publicPath: "/mortezaahmadi/",
   },
   module: {
     rules: [
@@ -27,7 +28,7 @@ module.exports = merge(commonConfig, {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: resolve(__dirname, `${HOST}/css`),
+              publicPath: resolve(__dirname, "mortezaahmadi/css"),
             },
           },
           "css-loader",
@@ -43,7 +44,7 @@ module.exports = merge(commonConfig, {
         type: "asset/resource",
         generator: {
           filename: "assets/images/[name]-[hash][ext]",
-          publicPath: `/${HOST}/`,
+          publicPath: "/mortezaahmadi/",
         },
       },
       {
@@ -98,5 +99,8 @@ module.exports = merge(commonConfig, {
       filename: "css/[name].[hash].css",
       chunkFilename: "css/[name].[hash].css",
     }),
+    // new CopyPlugin({
+    //   patterns: [{ from: "assets", to: "assets" }],
+    // }),
   ],
 });
