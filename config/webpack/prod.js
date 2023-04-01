@@ -9,10 +9,11 @@ const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = merge(commonConfig, {
   mode: "production",
+
   output: {
     filename: "js/bundle.js",
     path: resolve(__dirname, "../../docs"),
-    // publicPath: "/",
+    publicPath: "/docs/",
   },
   module: {
     rules: [
@@ -38,11 +39,22 @@ module.exports = merge(commonConfig, {
           },
         ],
       },
-      // {
-      //   test: /\.(jpe?g|png|gif|svg|otf)$/i,
-      //   exclude: /node_modules/,
-      //   use: ["url-loader", "file-loader"],
-      // },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/images/[name]-[hash][ext]",
+          publicPath: "/",
+        },
+      },
+      {
+        test: /\.(otf|woff2)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/fonts/[name]-[hash][ext]",
+          publicPath: "/",
+        },
+      },
     ],
   },
   devtool: "source-map",
@@ -87,8 +99,8 @@ module.exports = merge(commonConfig, {
       filename: "css/[name].[hash].css",
       chunkFilename: "css/[name].[hash].css",
     }),
-    new CopyPlugin({
-      patterns: [{ from: "assets", to: "assets" }],
-    }),
+    // new CopyPlugin({
+    //   patterns: [{ from: "assets", to: "assets" }],
+    // }),
   ],
 });

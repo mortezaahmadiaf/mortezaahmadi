@@ -1,11 +1,11 @@
 // shared config (dev and prod)
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { resolve } = require("path");
 
 module.exports = {
+  context: resolve(__dirname, "../../src"),
   entry: "./index.tsx",
-  context: path.resolve(__dirname, "../../src"),
-
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
     alias: {
@@ -26,18 +26,6 @@ module.exports = {
         test: /\.(ts|tsx)$/,
         loader: "ts-loader",
       },
-      {
-        test: /\.(jpe?g|png|gif|svg|woff|woff2|eot|ttf)$/i,
-        type: "asset/resource",
-      },
-      // {
-      //   test: /\.(woff|woff2|eot|ttf|otf)$/i,
-      //   type: "asset/inline",
-      // },
-      // {
-      //   test: /\.()$/,
-      //   loader: "url-loader",
-      // },
     ],
   },
   plugins: [

@@ -2,9 +2,11 @@
 const { merge } = require("webpack-merge");
 const commonConfig = require("./common");
 const ReactRefreshPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
+const { resolve } = require("path");
 
 module.exports = merge(commonConfig, {
   mode: "development",
+
   devServer: {
     open: true, // open browser
     hot: true, // enable HMR on the server
@@ -21,10 +23,22 @@ module.exports = merge(commonConfig, {
         test: /\.(scss|sass)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
-      // {
-      //   test: /\.(jpe?g|png|gif|svg|otf)$/i,
-      //   type: "asset/resource",
-      // },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/images/[name]-[hash][ext]",
+          publicPath: "/",
+        },
+      },
+      {
+        test: /\.(otf|woff2)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/fonts/[name]-[hash][ext]",
+          publicPath: "/",
+        },
+      },
     ],
   },
   devtool: "cheap-module-source-map",
