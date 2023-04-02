@@ -14,17 +14,8 @@ export const App = () => {
     document.querySelector("html").setAttribute("lang", lan.name);
     document.querySelector("body").setAttribute("class", lan.font);
   }, [lan]);
-  // return (
-  //   <div
-  //     style={{ height: "100vh" }}
-  //     className="w-100 d-flex justify-content-center align-items-center text-primary"
-  //   >
-  //     COMING SOON ...
-  //   </div>
-  // );
-
   return (
-    <div className={`$}`}>
+    <div className={``}>
       <RouterProvider router={router} fallbackElement={<Spinner />} />
     </div>
   );

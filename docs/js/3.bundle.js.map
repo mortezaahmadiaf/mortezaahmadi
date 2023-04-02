@@ -1,1 +1,1 @@
-{"version":3,"file":"js/3.bundle.js","mappings":"qGACA,EAAe,iB","sources":["webpack:///./i18n/fa/index.ts"],"sourcesContent":["import test from './test.json'\r\nexport default {\r\n    ...test\r\n}"],"names":[],"sourceRoot":""}
+{"version":3,"file":"js/3.bundle.js","mappings":"kHACA,EAAe,iB","sources":["webpack:///./i18n/fa/index.ts"],"sourcesContent":["import test from './test.json'\r\nexport default {\r\n    ...test\r\n}"],"names":[],"sourceRoot":""}

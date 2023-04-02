@@ -4,7 +4,7 @@ const { resolve } = require("path");
 const commonConfig = require("./common");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const sass = require("sass");
-const CopyPlugin = require("copy-webpack-plugin");
+const hosting = require("../hosting.json");
 const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = merge(commonConfig, {
@@ -12,8 +12,11 @@ module.exports = merge(commonConfig, {
 
   output: {
     filename: "js/bundle.js",
+    path: resolve(__dirname, `../../${hosting.outDir}`),
+    // publicPath: "/mortezaahmadi/",
     path: resolve(__dirname, "../../docs"),
     publicPath: "/docs/",
+    // publicPath: "/",
   },
   module: {
     rules: [
@@ -44,7 +47,7 @@ module.exports = merge(commonConfig, {
         type: "asset/resource",
         generator: {
           filename: "assets/images/[name]-[hash][ext]",
-          publicPath: "/",
+          publicPath: `/${hosting.name}/`,
         },
       },
       {

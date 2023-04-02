@@ -1,9 +1,7 @@
-import React from "react";
 import { createBrowserRouter, Outlet } from "react-router-dom";
-import { aboutUSLoader, AboutUS } from "./abou-us";
+import React from "react";
 import { Home, homeLoader } from "./home";
-import { urls } from "app/feature/routes";
-
+import { urls, basename } from "app/feature/routes";
 export const router = createBrowserRouter(
   [
     {
@@ -11,11 +9,6 @@ export const router = createBrowserRouter(
       element: <Home />,
       loader: homeLoader,
     },
-    {
-      path: urls.about_us,
-      element: <AboutUS />,
-      loader: aboutUSLoader,
-    },
   ],
-  { basename: "/", hydrationData: {} }
+  { basename, hydrationData: {} }
 );
