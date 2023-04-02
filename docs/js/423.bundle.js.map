@@ -1,1 +1,0 @@
-{"version":3,"file":"js/423.bundle.js","mappings":"sJACA,EAAe,iBACR,E","sources":["webpack:///./feature/i18n/en/index.ts"],"sourcesContent":["import test from './test.json'\r\nexport default {\r\n    ...test\r\n}"],"names":[],"sourceRoot":""}
