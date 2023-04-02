@@ -1,3 +1,2 @@
-import counterReducer from './counter'
-import languageReducer from './language'
-export{counterReducer,languageReducer}
+import languageReducer from "./language";
+export { languageReducer };
