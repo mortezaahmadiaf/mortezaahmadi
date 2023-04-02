@@ -5,10 +5,10 @@ import { useTranslation } from "react-i18next";
 import { changelang } from "app/feature/redux/slice/language";
 import { useAppSelector } from "app/feature/redux/hooks";
 import { useDispatch } from "react-redux";
+import { Translate, translate } from "app/components";
 const Home = () => {
-  const { t } = useTranslation();
   const dispatch = useDispatch();
-  const test = useAppSelector((state) => state.language);
+
   return (
     <div className="d-flex flex-column">
       <div>home</div>
@@ -29,8 +29,9 @@ const Home = () => {
       <Link to={urls.about_us} about="test">
         go to about us
       </Link>
-      {t("test")}
-      <img src={require("assets/images/morteza.jpg")} alt="" />
+      {translate("test")}
+      <Translate id="test" />
+      <img src={require("app/assets/images/morteza.jpg")} alt="" />
     </div>
   );
 };
