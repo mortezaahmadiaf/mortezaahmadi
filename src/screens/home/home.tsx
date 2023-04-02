@@ -6,6 +6,9 @@ const Home = () => {
       <section className="banner d-flex justify-content-center align-items-center">
         hello
       </section>
+      <section className=" d-flex justify-content-center align-items-center">
+        <img src={require("app/assets/images/banner.jpg")} />
+      </section>
     </div>
   );
 };
