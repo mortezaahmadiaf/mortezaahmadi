@@ -43,7 +43,7 @@ module.exports = merge(commonConfig, {
         test: /\.(png|jpe?g|gif)$/i,
         type: "asset/resource",
         generator: {
-          filename: "[path]/assets/images/[name]-[hash][ext]",
+          filename: "[path][name]-[hash][ext]",
           publicPath: `/`,
         },
       },
