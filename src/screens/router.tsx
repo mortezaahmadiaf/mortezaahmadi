@@ -2,7 +2,7 @@ import React from "react";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import { aboutUSLoader, AboutUS } from "./abou-us";
 import { Home, homeLoader } from "./home";
-import { urls } from "app/routes";
+import { urls } from "app/feature/routes";
 
 export const router = createBrowserRouter(
   [
@@ -17,5 +17,5 @@ export const router = createBrowserRouter(
       loader: aboutUSLoader,
     },
   ],
-  { basename: "/mortezaahmadi/", hydrationData: {} }
+  { basename: "/", hydrationData: {} }
 );
