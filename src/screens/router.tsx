@@ -1,4 +1,3 @@
-import React from "react";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import { Home, homeLoader } from "./home";
 import { urls, basename } from "app/feature/routes";

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[565],{565:(s,e,t)=>{t.r(e),t.d(e,{default:()=>c});const a=JSON.parse('{"test":"test localization"}'),c=Object.assign({},a)}}]);
+//# sourceMappingURL=565.bundle.js.map

@@ -12,8 +12,13 @@ module.exports = merge(commonConfig, {
 
   output: {
     filename: "js/bundle.js",
+<<<<<<< HEAD
     path: resolve(__dirname, `../../${hosting.outDir}`),
     // publicPath: "/mortezaahmadi/",
+=======
+    path: resolve(__dirname, "../../docs"),
+    // publicPath: "/",
+>>>>>>> main
   },
   module: {
     rules: [
@@ -28,7 +33,11 @@ module.exports = merge(commonConfig, {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
+<<<<<<< HEAD
               publicPath: resolve(__dirname, `${hosting.outDir}/css`),
+=======
+              publicPath: resolve(__dirname, "docs/css"),
+>>>>>>> main
             },
           },
           "css-loader",

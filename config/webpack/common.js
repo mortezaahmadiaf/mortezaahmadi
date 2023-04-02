@@ -31,9 +31,17 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Morteza Ahmadi",
       template: path.join(__dirname, "../../public", "index.html"),
+<<<<<<< HEAD
       base: ".",
       inject: "head",
       chunksSortMode: "auto",
+=======
+      base: "./",
+      inject: "head",
+      chunksSortMode: "auto",
+      // clean: true,
+      // minify: true,
+>>>>>>> main
       attributes: {
         // crossorigin: "anonymous",
       },
