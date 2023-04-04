@@ -1,7 +1,7 @@
 export const W_Experience = [
   {
     jobTitle: "javascript Developer",
-    company: "parsa Technologies",
+    company: "PARSA TECHNOLOGIES LIMITED",
     description: "",
     startDate: "2022",
     endDate: "Current",
