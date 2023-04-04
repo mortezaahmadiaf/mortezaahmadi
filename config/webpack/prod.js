@@ -52,7 +52,7 @@ module.exports = merge(commonConfig, {
         test: /\.(otf|woff2)$/i,
         type: "asset/resource",
         generator: {
-          filename: "assets/fonts/[name]-[fullhash][ext]",
+          filename: "assets/fonts/[name]-[hash][ext]",
           publicPath: "/",
         },
       },
