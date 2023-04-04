@@ -1,6 +1,4 @@
-import React, { lazy } from "react";
-
-const Home = lazy(() => import("./home"));
+import Home from "./home";
 const homeLoader = async (e) => {
   return e;
 };

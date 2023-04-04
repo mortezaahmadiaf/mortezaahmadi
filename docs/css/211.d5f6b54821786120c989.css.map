@@ -1,1 +1,0 @@
-{"version":3,"file":"css/211.d5f6b54821786120c989.css","mappings":"AAAA,QACE,yDACA,sBACA,WACA,i9oG","sources":["webpack:///./screens/home/home.scss"],"sourcesContent":[".banner {\r\n  background-image: url(\"../../assets/images/banner.jpg\");\r\n  background-size: cover;\r\n  width: 100%;\r\n  height: 65dvh !important;\r\n}\r\n"],"names":[],"sourceRoot":""}
