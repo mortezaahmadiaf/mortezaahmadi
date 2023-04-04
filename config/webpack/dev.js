@@ -22,14 +22,14 @@ module.exports = merge(commonConfig, {
         test: /\.(scss|sass)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
-      {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        type: "asset/resource",
-        generator: {
-          filename: "assets/images/[name]-[hash][ext]",
-          publicPath: "/",
-        },
-      },
+      // {
+      //   test: /\.(png|jpe?g|gif|svg)$/i,
+      //   type: "asset/resource",
+      //   generator: {
+      //     filename: "assets/images/[name]-[hash][ext]",
+      //     publicPath: "/",
+      //   },
+      // },
       {
         test: /\.(otf|woff2)$/i,
         type: "asset/resource",

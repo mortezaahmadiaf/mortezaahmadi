@@ -1,1 +1,1 @@
-export * from "./constantce";
+export * as Constantce from "./constantce";

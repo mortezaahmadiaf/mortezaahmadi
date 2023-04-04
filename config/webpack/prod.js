@@ -14,6 +14,7 @@ module.exports = merge(commonConfig, {
     filename: "js/bundle.js",
     path: resolve(__dirname, `../../${hosting.outDir}`),
     // publicPath: "/mortezaahmadi/",
+    assetModuleFilename: "[path][name].[ext]",
   },
   module: {
     rules: [
@@ -39,19 +40,19 @@ module.exports = merge(commonConfig, {
           },
         ],
       },
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        type: "asset/resource",
-        generator: {
-          filename: "[path][name]-[hash][ext]",
-          publicPath: `/`,
-        },
-      },
+      // {
+      //   test: /\.(png|jpe?g|gif)$/i,
+      //   type: "asset/resource",
+      //   generator: {
+      //     filename: "[path][name]-[hash][ext]",
+      //     publicPath: `/`,
+      //   },
+      // },
       {
         test: /\.(otf|woff2)$/i,
         type: "asset/resource",
         generator: {
-          filename: "assets/fonts/[name]-[hash][ext]",
+          filename: "assets/fonts/[name]-[fullhash][ext]",
           publicPath: "/",
         },
       },
