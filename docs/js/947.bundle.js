@@ -1,2 +1,2 @@
-(self.webpackChunk=self.webpackChunk||[]).push([[947],{947:(e,s,t)=>{t.r(s),t.d(s,{default:()=>a});const a=Object.assign({},{test:"تست"})}}]);
+(self.webpackChunk=self.webpackChunk||[]).push([[947],{947:(a,e,s)=>{s.r(e),s.d(e,{default:()=>l});const t=JSON.parse('{"personalInfo":{"firstName":"نام :  {{firstName}}","lastName":"نام خانوادگی : {{lastName}}"},"contactInfo":{"email":"ایمیل : {{email}}","address":"ادرس : {{address}}"},"location":"محل سکونت : {{location}}"}'),l=Object.assign({},t)}}]);
 //# sourceMappingURL=947.bundle.js.map
