@@ -10,15 +10,16 @@ i18n
     // the translations
     // (tip move them in a JSON file and import them,
     // or even better, manage them via a UI: https://react.i18next.com/guides/multiple-translation-files#manage-your-translations-with-a-management-gui)
-    // resources: {
-    //   // fa:{translation:fa},en:{translation:en}
-    //   en: {
-    //     translation: en,
-    //   },
-    // },
+    resources: {
+      // fa:{translation:fa},en:{translation:en}
+      // en: {
+      //   translation: en,
+      // },
+    },
     // lng: "en", // if you're using a language detector, do not define the lng option
     // fallbackLng: "en",
-
+    // nsSeparator: false,
+    // keySeparator: false,
     interpolation: {
       escapeValue: false, // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
     },
@@ -29,7 +30,7 @@ export const Localization = (props) => {
   useEffect(() => {
     if (!i18n.languages?.includes(lang)) {
       messagesLoader[lang]().then((messages) => {
-        i18n.addResources(lang, "translation", messages.default);
+        i18n.addResourceBundle(lang, "translation", messages.default, true);
         i18n.changeLanguage(lang);
       });
     } else {

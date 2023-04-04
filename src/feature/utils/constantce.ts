@@ -38,8 +38,8 @@ export const W_Experience = [
 export const P_Info = {
   F_Name: "Morteza",
   L_Name: "Ahmadi",
-  Bio: "",
-  ima: "mortezaa.jpg",
+  Bio: "Born 1993/03/21in iran with afghan originality and living in Kabul , Afghanistan for now with my family and always eager to Read, Learn, share knowledge, and also love teamwork spirit",
+  ima: "morteza1.jpg",
 };
 export const Con_Info = {
   mobile: ["+93744137683", "+93767196634"],

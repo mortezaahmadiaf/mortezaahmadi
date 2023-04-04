@@ -1,3 +1,11 @@
 {
-    "test":"تست"
+  "personalInfo": {
+    "firstName": "نام :  {{firstName}}",
+    "lastName": "نام خانوادگی : {{lastName}}"
+  },
+  "contactInfo": {
+    "email": "ایمیل : {{email}}",
+    "address": "ادرس : {{address}}"
+  },
+  "location": "محل سکونت : {{location}}"
 }
