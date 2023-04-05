@@ -15,7 +15,7 @@ export const App = () => {
     document.querySelector("body").setAttribute("class", lan.font);
   }, [lan]);
   return (
-    <div className={`d-flex w-100 h-100 flex-column`}>
+    <div className={`d-flex w-100 h-100 m-0 p-0`}>
       <RouterProvider router={router} fallbackElement={<Spinner />} />
     </div>
   );

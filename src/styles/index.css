@@ -1,10 +1,20 @@
-html,
-body,
 #root {
   height: 100dvh !important;
   width: 100dvw !important;
-  overflow-y: auto;
   overflow-x: hidden;
-  margin: 0 !important;
-  padding: 0 !important;
+  direction: inherit;
+}
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  /* direction: inherit; */
+}
+
+.item-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
