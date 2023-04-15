@@ -33,7 +33,34 @@ const Home = () => {
           <small>{Constantce.P_Info.Bio}</small>
         </div>
       </section>
-      <section className=" item-center m-0 p-0">
+      <section className=" d-flex flex-column bg-secoundry py-3 pt-4 ">
+        <h1 className="m-2">Work Experience</h1>
+
+        <div className="row px-3 ">
+          {Constantce.W_Experience.map((item) => (
+            <div className="col-12 col-sm-6 col-md-4 ">
+              <div className="d-flex flex-column bg-primary m-2 rounded px-2 py-4">
+                <h6>{item.jobTitle}</h6>
+                <div className="d-flex mx-2 flex-column">
+                  <h6>{item.company}</h6>
+                  <div className="d-flex">
+                    <small>{item.startDate}</small>-
+                    <small>{item.endDate}</small>
+                  </div>
+                  <small>{item.description}</small>
+                  <div className="row">
+                    {item.tools.map((tool) => (
+                      <strong className=" col">
+                        <small className="text-danger">{tool}</small>
+                      </strong>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
         {/* <div className=" flex-column card bg-primary col-3 p-4 m-1  item-center ">
           <Translate
             id="personalInfo.firstName"
