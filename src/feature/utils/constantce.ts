@@ -1,6 +1,6 @@
 export const W_Experience = [
   {
-    jobTitle: "javascript Developer",
+    jobTitle: "enior Front End at Parsa Tech",
     company: "PARSA TECHNOLOGIES LIMITED",
     description: "",
     startDate: "2022",
@@ -8,7 +8,15 @@ export const W_Experience = [
     location: "kabul ,kabul ,Afghanistan",
   },
   {
-    jobTitle: "javascript Developer",
+    jobTitle: "Front End Assistant at Parsa Tech",
+    company: "PARSA TECHNOLOGIES LIMITED",
+    description: "",
+    startDate: "2022",
+    endDate: "Current",
+    location: "kabul ,kabul ,Afghanistan",
+  },
+  {
+    jobTitle: "Full Stack Developer (MERN) at Donyaro ( Remote )",
     company: "Donyaro",
     description: "",
     startDate: "2021",
@@ -17,7 +25,7 @@ export const W_Experience = [
     type: "Remote",
   },
   {
-    jobTitle: "javascript Developer",
+    jobTitle: "Front End JavaScript Developer at Donyaro ",
     company: "saeifi company",
     description: "",
     startDate: "2020",
