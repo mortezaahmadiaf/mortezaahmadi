@@ -1,14 +1,14 @@
 import React, { CSSProperties } from "react";
-export interface ICol {
+export interface IROW {
   children?: any;
   className?: string;
   style?: CSSProperties;
-  align: "start" | "end" | "center";
-  alignType: "items" | "self";
-  justify: "start" | "end" | "center";
+  align?: "start" | "end" | "center";
+  alignType?: "items" | "self";
+  justify?: "start" | "end" | "center";
 }
 
-export const Col = (props?: ICol) => (
+export const Row = (props?: IROW) => (
   <div
     style={props.style}
     className={`row  ${props.className ? props.className : ""} ${

@@ -1,7 +1,16 @@
 import React from "react";
 import "./home.scss";
 import { Constantce } from "app/feature/utils";
-import { Translate, translate } from "app/components";
+import {
+  Translate,
+  translate,
+  FlipCardFull,
+  Row,
+  Col,
+  FlipCard,
+  FlipCardBack,
+  FlipCardFront,
+} from "app/components";
 import { useAppDispatch } from "app/feature/redux/hooks";
 import { changelang } from "app/feature/redux/slice/language";
 const Home = () => {
