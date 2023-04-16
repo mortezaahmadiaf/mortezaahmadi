@@ -25,6 +25,7 @@ export const W_Experience = [
       "Html",
       "Css",
       "Bootstrap",
+      "Webpack",
     ],
   },
   {
@@ -38,8 +39,15 @@ export const W_Experience = [
     tools: [
       "Javascript",
       "Typescript",
+      "Nodejs",
+      "Express",
+      "Mongo-DB",
+      "Postgresql",
+      "React-Native",
       "React",
       "Redux",
+      "Mocha",
+      "Chai",
       "Html",
       "Css",
       "Bootstrap",
@@ -61,10 +69,12 @@ export const W_Experience = [
       "Html",
       "Css",
       "Bootstrap",
+      "Primereact",
+      "Prmeface",
     ],
   },
   {
-    jobTitle: "Senior Front End ",
+    jobTitle: "Senior Front End Developer",
     company: "PARSA TECHNOLOGIES LIMITED",
     description: "",
     startDate: "2023",
@@ -74,6 +84,7 @@ export const W_Experience = [
       "Javascript",
       "Typescript",
       "React",
+      "React-Native",
       "Redux",
       "Html",
       "Css",
@@ -84,7 +95,7 @@ export const W_Experience = [
 export const P_Info = {
   F_Name: "Morteza",
   L_Name: "Ahmadi",
-  Bio: "Born 1993/03/21in iran with afghan originality and living in Kabul , Afghanistan for now with my family and always eager to Read, Learn, share knowledge, and also love teamwork spirit",
+  Bio: "Born 1993/03/21 in iran with afghan originality and living in Kabul , Afghanistan for now with my family and always eager to Read, Learn, share knowledge, and also love teamwork spirit",
   ima: "morteza1.jpg",
 };
 export const Con_Info = {
