@@ -1,20 +1,9 @@
 import React from "react";
 import "./home.scss";
 import { Constantce } from "app/feature/utils";
-// import {
-//   Translate,
-//   translate,
-//   FlipCardFull,
-//   Row,
-//   Col,
-//   FlipCard,
-//   FlipCardBack,
-//   FlipCardFront,
-// } from "app/components";
-// import { useAppDispatch } from "app/feature/redux/hooks";
-// import { changelang } from "app/feature/redux/slice/language";
+
+// import { MyApp } from "./home-component";
 const Home = () => {
-  // const distpatch = useAppDispatch();
   return (
     <div className="d-flex w-100 h-100 text-white  flex-column m-0 p-0">
       <section className="banner col-12 row m-0 d-flex justify-content-start align-items-center ">
@@ -26,8 +15,7 @@ const Home = () => {
         </div>
         <div className="d-flex justify-content-start flex-column col-12 col-md-6">
           <h1>
-            {" "}
-            <strong>MORTEZA AHMADI</strong>{" "}
+            <strong>MORTEZA AHMADI</strong>
           </h1>
           <h2>Full stack Developer(MERN ) with front end focus</h2>
           <small>{Constantce.P_Info.Bio}</small>
@@ -35,7 +23,6 @@ const Home = () => {
       </section>
       <section className=" d-flex flex-column bg-secoundry py-3 pt-4 ">
         <h1 className="m-2">Work Experience</h1>
-
         <div className="row px-3 ">
           {Constantce.W_Experience.map((item) => (
             <div className="col-12 col-sm-6 col-md-4 ">
@@ -48,10 +35,10 @@ const Home = () => {
                     <small>{item.endDate}</small>
                   </div>
                   <small>{item.description}</small>
-                  <div className="row">
+                  <div className="row ">
                     {item.tools.map((tool) => (
-                      <strong className=" col">
-                        <small className="text-danger">{tool}</small>
+                      <strong className="col border-end">
+                        <small className="">{tool}</small>
                       </strong>
                     ))}
                   </div>
@@ -59,39 +46,53 @@ const Home = () => {
               </div>
             </div>
           ))}
+          <div className="col-12 col-sm-12 col-md-7">
+            <h1 className="m-1">Education</h1>
+            <table className="col-12 m-3">
+              <thead>
+                <tr>
+                  <th>Field</th> <th>Degree</th> <th>University</th>
+                  <th>Start Date</th> <th>End Date</th> <th>Degree</th>{" "}
+                  <th>Grad</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{Constantce.Edu_Info.field}</td>
+                  <td>{Constantce.Edu_Info.degree}</td>
+                  <td>{Constantce.Edu_Info.university}</td>
+                  <td>{Constantce.Edu_Info.startDate}</td>
+                  <td>{Constantce.Edu_Info.endDate}</td>
+                  <td>{Constantce.Edu_Info.degree}</td>
+                  <td>{Constantce.Edu_Info.grad}</td>
+                </tr>
+              </tbody>
+              <div>{Constantce.Edu_Info.description}</div>
+            </table>
+          </div>
+
+          <div className="col-12 col-sm-12 col-md-7">
+            <table className="col-12 m-3">
+              <thead>
+                <tr>
+                  <th>Links</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{Constantce.LINKS.git}</td>
+                </tr>
+                <tr>
+                  <td>{Constantce.LINKS.linkedin}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-
-        {/* <div className=" flex-column card bg-primary col-3 p-4 m-1  item-center ">
-          <Translate
-            id="personalInfo.firstName"
-            param={{ firstName: Constantce.P_Info.F_Name }}
-          />
-          <Translate
-            id="personalInfo.lastName"
-            param={{ lastName: Constantce.P_Info.L_Name }}
-          />
-
-          <p className="mt-1">
-            <small>{Constantce.P_Info.Bio}</small>{" "}
-          </p>
-        </div> */}
+        {/* <MyApp /> */}
       </section>
     </div>
   );
 };
 
 export default Home;
-{
-  /* <button
-onClick={() => distpatch(changelang("fa"))}
-className="btn btn-primary text white mx-1"
->
-fa
-</button>
-<button
-onClick={() => distpatch(changelang("en"))}
-className="btn btn-secoundry text white mx-1"
->
-en
-</button> */
-}

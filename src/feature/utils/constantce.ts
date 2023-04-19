@@ -41,9 +41,9 @@ export const W_Experience = [
       "Typescript",
       "Nodejs",
       "Express",
-      "Mongo-DB",
+      "MongoDB",
       "Postgresql",
-      "React-Native",
+      "ReactNative",
       "React",
       "Redux",
       "Mocha",
@@ -84,7 +84,7 @@ export const W_Experience = [
       "Javascript",
       "Typescript",
       "React",
-      "React-Native",
+      "ReactNative",
       "Redux",
       "Html",
       "Css",
@@ -105,13 +105,15 @@ export const Con_Info = {
 };
 export const Edu_Info = {
   field: "Software Enginner",
+  degree: "Bachelor",
   university: "Islamic Azad University of Shiraz",
   certificateImage: "",
   description: "",
   startDate: "2015",
   endDate: "2019",
+  grad: "15.07 From 20",
 };
 export const LINKS = {
   git: "github.com/mortezaahmadiaf",
-  linkedin: "https://www.linkedin.com/in/morteza-ahmadi-1638081a9",
+  linkedin: "https://www.linkedin.com/in/mortezaahmadi1638081a9",
 };
